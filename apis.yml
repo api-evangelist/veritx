@@ -1,7 +1,31 @@
 aid: veritx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/veritx.png
 name: VeriTX
-description: VeriTX is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  VeriTX Corp. is a veteran-owned blockchain and cybersecurity firm based in
+  East Aurora, New York that builds trusted, tamper-evident data and supply-chain
+  infrastructure originally developed for the U.S. Air Force under SBIR, STTR, and
+  Defense Production Act programs. Its flagship product, QuDEFENSE, is a data-security
+  platform that combines post-quantum cryptography with blockchain to protect
+  sensitive files in transit and at rest, providing real-time manipulation detection,
+  automatic quarantine of tampered data, immutable audit trails, and end-to-end data
+  provenance. VeriTX began as a blockchain-powered digital marketplace for aerospace
+  additive manufacturing (3D-printed aircraft parts) built on Algorand, and has since
+  focused on secure data transfer and provenance for defense, aerospace, medical, and
+  industrial customers. QuDEFENSE is offered as an API, an Outlook plugin, and a
+  standalone web interface, though VeriTX does not publish a public developer portal,
+  OpenAPI specification, or API reference documentation.
 url: https://raw.githubusercontent.com/api-evangelist/veritx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Blockchain
+- Cybersecurity
+- Data Security
+- Post-Quantum Cryptography
+- Supply Chain
+- Aerospace
+- Additive Manufacturing
+- Provenance
+- Defense
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +54,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/veritx-domain-security.yml
 - type: Website
-  url: https://vertix.co/
+  url: https://www.veritx.com/
+- type: Product
+  name: QuDEFENSE
+  url: https://qudefense.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
